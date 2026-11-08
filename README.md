@@ -88,7 +88,17 @@ For training/evaluation, place the required datasets and checkpoints in the expe
 
 ## Authors and contributions
 
-This was a **group project**, not an individual research publication. **Hassan Al-Qahtani** led the project and developed the ML/DL modeling, training and evaluation code presented here; teammates developed the website interface. The academic report lists all team authors and supervisors. See [project credits](docs/contributions.md).
+This project was developed by a four-member team at King Saud University.
+
+Hassan Hasosah — Team Leader & ML/DL Developer
+
+Led the project and was responsible for developing the machine learning and deep learning models, conducting training experiments, and evaluating model performance.
+
+Other Team Members — Web Development
+
+Designed and developed the website interface used to demonstrate the phishing detection system.
+
+Full team credits and academic supervision details are available in the [project credits](docs/contributions.md).
 
 ## Known limitations
 
