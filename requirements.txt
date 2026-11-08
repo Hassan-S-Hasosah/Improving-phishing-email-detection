@@ -1,0 +1,10 @@
+# Inferred from available source imports; original exact versions are not recovered.
+# Install a PyTorch build appropriate for your CPU/GPU.
+flask
+flask-cors
+joblib
+numpy
+pandas
+scikit-learn
+torch
+transformers
