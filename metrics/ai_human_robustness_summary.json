@@ -1,0 +1,144 @@
+{
+    "experiment_name": "AI-generated vs human-generated external robustness test",
+    "model": "Hybrid BERT embeddings + structural features",
+    "mode": "balanced",
+    "threshold": 0.5,
+    "total_rows": 4000,
+    "overall_confusion_matrix": [
+        [
+            1478,
+            522
+        ],
+        [
+            127,
+            1873
+        ]
+    ],
+    "overall_classification_report": {
+        "legitimate": {
+            "precision": 0.9208722741433022,
+            "recall": 0.739,
+            "f1-score": 0.8199722607489598,
+            "support": 2000.0
+        },
+        "phishing": {
+            "precision": 0.7820459290187891,
+            "recall": 0.9365,
+            "f1-score": 0.8523321956769055,
+            "support": 2000.0
+        },
+        "accuracy": 0.83775,
+        "macro avg": {
+            "precision": 0.8514591015810457,
+            "recall": 0.83775,
+            "f1-score": 0.8361522282129327,
+            "support": 4000.0
+        },
+        "weighted avg": {
+            "precision": 0.8514591015810457,
+            "recall": 0.83775,
+            "f1-score": 0.8361522282129327,
+            "support": 4000.0
+        }
+    },
+    "overall_prediction_type_counts": {
+        "correct": 3351,
+        "false_positive": 522,
+        "false_negative": 127
+    },
+    "source_type_summaries": {
+        "AI": {
+            "rows": 2000,
+            "confusion_matrix": [
+                [
+                    478,
+                    522
+                ],
+                [
+                    127,
+                    873
+                ]
+            ],
+            "classification_report": {
+                "legitimate": {
+                    "precision": 0.7900826446280992,
+                    "recall": 0.478,
+                    "f1-score": 0.5956386292834891,
+                    "support": 1000.0
+                },
+                "phishing": {
+                    "precision": 0.6258064516129033,
+                    "recall": 0.873,
+                    "f1-score": 0.72901878914405,
+                    "support": 1000.0
+                },
+                "accuracy": 0.6755,
+                "macro avg": {
+                    "precision": 0.7079445481205012,
+                    "recall": 0.6755,
+                    "f1-score": 0.6623287092137695,
+                    "support": 2000.0
+                },
+                "weighted avg": {
+                    "precision": 0.7079445481205011,
+                    "recall": 0.6755,
+                    "f1-score": 0.6623287092137695,
+                    "support": 2000.0
+                }
+            },
+            "prediction_type_counts": {
+                "correct": 1351,
+                "false_positive": 522,
+                "false_negative": 127
+            }
+        },
+        "Human": {
+            "rows": 2000,
+            "confusion_matrix": [
+                [
+                    1000,
+                    0
+                ],
+                [
+                    0,
+                    1000
+                ]
+            ],
+            "classification_report": {
+                "legitimate": {
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1-score": 1.0,
+                    "support": 1000.0
+                },
+                "phishing": {
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1-score": 1.0,
+                    "support": 1000.0
+                },
+                "accuracy": 1.0,
+                "macro avg": {
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1-score": 1.0,
+                    "support": 2000.0
+                },
+                "weighted avg": {
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1-score": 1.0,
+                    "support": 2000.0
+                }
+            },
+            "prediction_type_counts": {
+                "correct": 2000
+            }
+        }
+    },
+    "main_finding": {
+        "human_generated": "The model classified all human-generated legitimate and phishing emails correctly.",
+        "ai_generated": "The model showed reduced robustness on AI-generated emails, especially AI-generated legitimate emails, which produced many false positives.",
+        "project_relevance": "This supports the project motivation that modern and AI-generated phishing-style emails require additional robustness testing and adaptation."
+    }
+}
