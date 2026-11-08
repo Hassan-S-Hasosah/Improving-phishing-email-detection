@@ -1,0 +1,47 @@
+{
+    "model": "bert-base-uncased",
+    "training_type": "full_train_set",
+    "max_length": 256,
+    "train_rows": 144957,
+    "validation_rows": 31062,
+    "test_rows": 31063,
+    "confusion_matrix": [
+        [
+            16202,
+            56
+        ],
+        [
+            105,
+            14700
+        ]
+    ],
+    "classification_report": {
+        "legitimate": {
+            "precision": 0.9935610474029558,
+            "recall": 0.996555541887071,
+            "f1-score": 0.9950560417626286,
+            "support": 16258.0
+        },
+        "phishing": {
+            "precision": 0.9962049335863378,
+            "recall": 0.9929078014184397,
+            "f1-score": 0.9945536348567369,
+            "support": 14805.0
+        },
+        "accuracy": 0.9948169848372662,
+        "macro avg": {
+            "precision": 0.9948829904946468,
+            "recall": 0.9947316716527553,
+            "f1-score": 0.9948048383096828,
+            "support": 31063.0
+        },
+        "weighted avg": {
+            "precision": 0.9948211554074939,
+            "recall": 0.9948169848372662,
+            "f1-score": 0.9948165885790428,
+            "support": 31063.0
+        }
+    },
+    "false_negatives": 105,
+    "false_positives": 56
+}
