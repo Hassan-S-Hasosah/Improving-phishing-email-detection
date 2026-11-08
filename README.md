@@ -37,10 +37,17 @@ For details and data caveats, see [reported results](docs/results.md) and [data/
 
 The website interface was designed and implemented by other members of the project team. The research backend and detection code included here were contributed by Hassan.
 
-**Screenshot upload pending:** The two original screenshots are already prepared locally. They will be visible in this README after they are placed at the paths below. They are intentionally not substituted with generated mockups.
+### Web interface — email submission and scan settings
 
-- `assets/screenshots/web-interface-overview.png` — email entry, detection mode selection, scan button, and internal research-accuracy display.
-- `assets/screenshots/methodology-how-it-works.png` — hybrid feature extraction, BERT contextual analysis, mode selection, and research-based P1–P9 failure modes.
+![Phishing email detector web interface showing email entry and detection mode selection](assets/screenshots/web-interface-overview.png)
+
+The team-built web interface allows users to paste an email, choose between **Balanced** and **High Security** detection modes, and request a classification from the Flask backend. The results shown on the interface represent the academic prototype, not production-level assurance.
+
+### How it works — hybrid detection methodology
+
+![Methodology section showing hybrid feature extraction, BERT contextual analysis, detection mode selection, and P1–P9 indicators](assets/screenshots/methodology-how-it-works.png)
+
+The methodology panel describes how the detector combines **BERT-based semantic representations** with **email structural indicators** and adjustable decision thresholds. The P1–P9 failure modes motivated the research design; they should not be interpreted as nine independently verified, fully solved challenges.
 
 The interface displayed **99.48% internal evaluation accuracy**, not an external or production benchmark. The displayed `<2s` analysis-time claim has not been independently validated. The appearance of P1–P9 in the UI does not mean all failure modes were fully solved.
 
