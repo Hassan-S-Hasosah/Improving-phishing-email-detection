@@ -1,12 +1,10 @@
-# Screenshot files
+# Web application screenshots
 
-The two screenshots below are the actual team's UI screenshots, not recreated imagery. They are intentionally kept out of the source code because the frontend was created by teammates.
+These images were uploaded from the original university group project demo:
 
-Place these files in this exact folder:
+- [Web interface overview](web-interface-overview.png): headline, email text input, sample buttons, detection-mode selection, and scan action.
+- [Methodology overview](methodology-how-it-works.png): explanation of hybrid feature extraction, BERT contextual analysis, detection mode selection, and the P1–P9 research motivation.
 
-- `web-interface-overview.png` — top of the web interface, input and mode selector.
-- `methodology-how-it-works.png` — methodology / how it works.
+The **frontend was built by other team members**, while the machine-learning and Python backend scripts in this repository were developed by Hassan. Screenshots are included to document the integrated academic prototype, not as a claim of frontend authorship.
 
-The files are included in the prepared local ZIP package given in chat. To upload them via GitHub, open this folder in GitHub and choose **Add file → Upload files**, then commit the two PNGs.
-
-The source README is ready to link to these files once uploaded. Check any teammate permissions before public distribution.
+Figures shown in the interface (including the displayed analysis time) are not independent production performance guarantees. The 99.48% figure refers to the reported internal test accuracy.
