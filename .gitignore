@@ -1,0 +1,49 @@
+# Local credentials and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets.json
+credentials.json
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+gp2_env/
+.pytest_cache/
+.mypy_cache/
+
+# Weights, embeddings, and exported artifacts
+bert_full_model/
+roberta_full_model/
+hybrid_full_outputs/
+hybrid_outputs/
+hybrid_ai_adapted_outputs/
+hybrid_ai_adapted_v2_outputs/
+*.pt
+*.pth
+*.pkl
+*.joblib
+*.safetensors
+*.bin
+*.npy
+*.npz
+*.ckpt
+
+# Email corpora and per-email prediction logs
+*.csv
+*.tsv
+*.parquet
+*.arrow
+*.feather
+*.xlsx
+*.xls
+
+# Local OS, logs
+.DS_Store
+Thumbs.db
+*.log
