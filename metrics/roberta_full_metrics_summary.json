@@ -1,0 +1,47 @@
+{
+    "model": "roberta-base",
+    "training_type": "full_train_set",
+    "max_length": 256,
+    "train_rows": 144957,
+    "validation_rows": 31062,
+    "test_rows": 31063,
+    "confusion_matrix": [
+        [
+            16218,
+            40
+        ],
+        [
+            138,
+            14667
+        ]
+    ],
+    "classification_report": {
+        "legitimate": {
+            "precision": 0.9915627292736611,
+            "recall": 0.9975396727764793,
+            "f1-score": 0.9945422211320292,
+            "support": 16258.0
+        },
+        "phishing": {
+            "precision": 0.9972802067042905,
+            "recall": 0.9906788247213779,
+            "f1-score": 0.9939685551640011,
+            "support": 14805.0
+        },
+        "accuracy": 0.9942697099443067,
+        "macro avg": {
+            "precision": 0.9944214679889758,
+            "recall": 0.9941092487489286,
+            "f1-score": 0.9942553881480152,
+            "support": 31063.0
+        },
+        "weighted avg": {
+            "precision": 0.9942877478926119,
+            "recall": 0.9942697099443067,
+            "f1-score": 0.9942688050210079,
+            "support": 31063.0
+        }
+    },
+    "false_negatives": 138,
+    "false_positives": 40
+}
